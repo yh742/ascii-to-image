@@ -1,0 +1,3 @@
+pyrebase
+python-dotenv
+Pillow

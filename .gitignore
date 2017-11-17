@@ -1,0 +1,8 @@
+*.pyc
+.env
+.vscode/
+firebase_admin.json
+images/
+processed/
+_pycache_
+.DS_Store
