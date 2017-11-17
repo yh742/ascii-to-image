@@ -34,3 +34,5 @@ $ ./run.sh
 1. Currently the way we determine whether we have processed a file is by seeing if we have that file in the ```/images/*``` subdirectory. This is not scalable. Think of a better way to keep track of which files have been converted so that we do not have to convert all the files on every update.
 2. Converting from image to ascii to image requires a downsample where we lose the aspect ratio. Think of a way to maintain the aspect ratio of the original image. 
 3. We are currently polling for new data, this can result in unecessary API calls. Think of a way to make use of the ```streaming``` API as a proxy to notifying of new files. Or think of a different way to be updated that a new file is available
+4. Perform a type check to make sure you are actually processing a valid image file
+5. Use ```jpg``` to reduce the footprint of the processed image
