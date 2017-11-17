@@ -30,7 +30,7 @@ Since the Storage resource of Firebase does not have a stream api available, we 
 $ docker-compose build .
 $ docker-compose up
 ```
-Or use the helper scripe
+Or use the helper script
 ```
 $ ./run.sh
 ```
