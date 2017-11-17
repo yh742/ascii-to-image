@@ -3,7 +3,7 @@ An example service which listens for images in firebase and converts them to asc
 
 ## Requirements
 1. Docker / Docker Compose installed and configured. (See documentation [here](https://docs.docker.com/engine/installation/))
-2. [Firebase Account](https://firebase.google.com)
+2. [Firebase Account](https://firebase.google.com) - To use Storage you need to generate an Admin SDK file, Project Settings -> Service Accounts -> Generate New Private Key
 3. ```.env``` file with the following content
 ```
 API_KEY=""
