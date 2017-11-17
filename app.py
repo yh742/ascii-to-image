@@ -36,7 +36,7 @@ def process_image(filepath):
 
 
 def download_image(filename):
-    """Download an image from firebase to /image
+    """Download an image from firebase to images/
     """
     destination = os.path.join(os.path.dirname(__file__), 'images/' + filename)
     firebase.storage().child(filename).download(destination)
@@ -44,7 +44,7 @@ def download_image(filename):
 
 
 def upload_image(resource, filename):
-    """Upload a file
+    """Upload a file to firebase
     """
     # if we want to just overwrite the file, we would do
     # .child(resource).put(filename)
@@ -52,9 +52,8 @@ def upload_image(resource, filename):
     firebase.storage().child('ascii-' + resource).put(filename)
 
 
-def fb_get_filename_list(unprocessed_only=False):
-    """returns a list of file names
-    @unprocessed_only:boolean = whether or not to filter out the processed files
+def get_filename_list():
+    """returns a list of file names from firebase
     @returns list of filenames
     """
     files = []
@@ -67,7 +66,7 @@ def fb_get_filename_list(unprocessed_only=False):
 def poll_firebase_storage():
     """Checks the firebase storage bucket for any 
     """
-    files = fb_get_filename_list()
+    files = get_filename_list()
 
     for obj in files:
         if os.path.isfile( os.path.join(os.path.dirname(__file__), 'images/' + obj) ) or obj.startswith('ascii-'):
