@@ -19,6 +19,12 @@ This service listens for any files that are added to a Firebase Storage bucket. 
 
 Since the Storage resource of Firebase does not have a stream api available, we use a simple polling technique to check for new files.
 
+#### Before
+![](https://github.com/AVatch/ascii-image-service/blob/master/sample/before.png?raw=true)
+
+#### After
+![](https://github.com/AVatch/ascii-image-service/blob/master/sample/after.png?raw=true)
+
 ## How to run it
 ```
 $ docker-compose build .
