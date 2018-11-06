@@ -20,10 +20,10 @@ This service listens for any files that are added to a Firebase Storage bucket. 
 Since the Storage resource of Firebase does not have a stream api available, we use a simple polling technique to check for new files.
 
 #### Before
-![](https://github.com/AVatch/ascii-image-service/blob/master/sample/before.png?raw=true)
+![](https://firebasestorage.googleapis.com/v0/b/cs5450-lab4.appspot.com/o/images%2F17_11_23_23_42_011699?alt=media&token=626c0828-353a-4891-a316-a8e316b28a71)
 
 #### After
-![](https://github.com/AVatch/ascii-image-service/blob/master/sample/after.png?raw=true)
+![](https://firebasestorage.googleapis.com/v0/b/cs5450-lab4.appspot.com/o/ascii-images%2F17_11_23_23_42_011699?alt=media&token=60256b2f-1be7-4791-bcf6-ec5934b64bcb)
 
 ## How to run it
 ```
